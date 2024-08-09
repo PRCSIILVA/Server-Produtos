@@ -1,0 +1,38 @@
+POST http://localhost:3333/produtos
+Content-Type: application/json
+
+{
+    "name": "capa",
+    "brand": "LSW",
+    "model":"",
+    "year":"",
+    "color":"Vermelho",
+    "size":"60",
+    "price":"150",
+    "amount":"15"
+}
+
+###
+
+GET http://localhost:3333/produtos
+
+###
+
+PUT http://localhost:3333/produtos/2242c0b8-3003-409d-b7a1-cfbcde092d08
+Content-Type: application/json
+
+{
+    "name": "capacete",
+    "brand": "LSW",
+    "model":"fast",
+    "year":"2012",
+    "color":"preta",
+    "size":"60",
+    "price":"450",
+    "amount":"5"
+}
+
+
+###
+
+DELETE http://localhost:3333/produtos/2242c0b8-3003-409d-b7a1-cfbcde092d08
